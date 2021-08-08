@@ -1,0 +1,89 @@
+body{
+    background-color: #eeeeee;
+}
+.login-container{
+
+}
+/*.c-login-box:after{*/
+/*    content: '';*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*    background-color: red;*/
+/*    padding: 1rem;*/
+/*    border-radius: 5px;*/
+/*    box-shadow: 0 0 5px gray;*/
+/*    position: absolute;*/
+/*    top: 50%;*/
+/*    left: 50%;*/
+/*    transform: translate(-50%,-50%)rotate(45deg);*/
+/*}*/
+.c-login-box{
+    width: 90%;
+    background-color: #061638;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 5px gray;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.login-logo{
+    position: absolute;
+    top: -50px;
+    left: -50px;
+}
+.login-logo > img{
+    padding: 5px;
+    background-color: #061638;
+    border-radius: 50rem;
+}
+/*w-100 p-2 rounded text-right*/
+.login-form {
+    width: 100% !important;
+    border-radius: 5px;
+    text-align: right;
+    padding: 20px;
+}
+.form-control{
+    height: 45px!important;
+}
+.btn-submit{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-direction: row-reverse;
+    margin-bottom: 0!important;
+}
+.btn-submit > button{
+    width: 100px;
+    height: 40px;
+}
+.btn-submit > a{
+    margin-right: 5px;
+    color: black;
+}
+.form-group{
+    position: relative;
+    color:white!important;
+}
+.form-group > span{
+    position: absolute;
+    top: 35px;
+    left: 10px;
+    font-size: 23px;
+    color: black;
+}
+@media (max-width: 450px) {
+    .login-logo{
+        position: absolute;
+        top: -60px;
+        left: 50%;
+        transform: translate(-50%,0);
+    }
+}
+@media (min-width: 450px) {
+    .c-login-box{
+        width: 350px;
+    }
+}
